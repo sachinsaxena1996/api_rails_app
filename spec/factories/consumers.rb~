@@ -1,0 +1,6 @@
+FactoryGirl.define do
+  factory :consumer do |f|
+    f.firstname "Sachin"
+    f.lastname "Saxena"
+  end
+end

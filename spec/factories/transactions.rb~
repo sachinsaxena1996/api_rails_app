@@ -1,0 +1,6 @@
+FactoryGirl.define do
+  factory :transaction do |f|
+    f.sale_amount 100.0
+    f.transaction_date  Time.now.strftime('%Y-%m-%d')
+  end
+end

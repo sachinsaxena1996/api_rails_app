@@ -1,0 +1,26 @@
+<%= form_for(@distance_search) do |f| %>
+  <% if @distance_search.errors.any? %>
+    <div id="error_explanation">
+      <p id="notice"><%= notice %></p>
+      <h2><%= pluralize(@distance_search.errors.count, "error") %> prohibited this distance_search from being saved:</h2>
+
+      <ul>
+      <% @distance_search.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :source_zip_code %><br>
+    <%= f.number_field :source_zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :destination_zip_code %><br>
+    <%= f.number_field :destination_zip_code %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Find Distance"%>
+  </div>
+<% end %>

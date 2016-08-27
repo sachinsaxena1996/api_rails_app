@@ -1,0 +1,1 @@
+json.partial! "distance_searches/distance_search", distance_search: @distance_search

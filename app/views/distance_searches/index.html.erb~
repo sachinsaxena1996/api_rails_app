@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Distance Searches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Source zip code</th>
+      <th>Destination zip code</th>
+      <th>Calculated distance</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @distance_searches.each do |distance_search| %>
+      <tr>
+        <td><%= distance_search.source_zip_code %></td>
+        <td><%= distance_search.destination_zip_code %></td>
+        <td><%= distance_search.calculated_distance %></td>
+        <td><%= link_to 'Show', distance_search %></td>    
+        <td><%= link_to 'Destroy', distance_search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Distance search', new_distance_search_path %>

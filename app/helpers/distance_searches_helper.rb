@@ -1,0 +1,2 @@
+module DistanceSearchesHelper
+end

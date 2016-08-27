@@ -1,0 +1,1 @@
+json.array! @distance_searches, partial: 'distance_searches/distance_search', as: :distance_search

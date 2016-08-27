@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Source zip code:</strong>
+  <%= @distance_search.source_zip_code %>
+</p>
+
+<p>
+  <strong>Destination zip code:</strong>
+  <%= @distance_search.destination_zip_code %>
+</p>
+
+<p>
+  <strong>Calculated distance:</strong>
+  <%= @distance_search.calculated_distance %>
+</p>
+
+<%= link_to 'Edit', edit_distance_search_path(@distance_search) %> |
+<%= link_to 'Back', distance_searches_path %>
